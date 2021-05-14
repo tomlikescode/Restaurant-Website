@@ -388,16 +388,28 @@ nav .links-nav a:hover {
 
 .menu {
   min-height: 100vh;
-  background-color: gray;
+  background: url("../images/menubackground.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 5rem;
   align-items: center;
+}
+
+.menu h2 {
+  text-transform: capitalize;
+  margin-top: 5rem;
+  font-size: 2rem;
 }
 
 .section-center {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -413,8 +425,12 @@ nav .links-nav a:hover {
 
 .menu-item img {
   object-fit: cover;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  border: solid;
+  border-width: thin;
+  border-color: black;
 }
 
 *,
