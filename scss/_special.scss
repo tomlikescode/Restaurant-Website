@@ -1,0 +1,168 @@
+.special {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(.6turn, #ffec83, rgb(255, 250, 209), rgb(253, 179, 179), rgb(250, 197, 128), #ffa42d);
+    transition: $transition;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 450;
+        margin-top: 2rem;
+        letter-spacing: .25rem;
+        transition: $transition;
+
+        @include media-md {
+            font-size: 2.5rem;
+        }
+
+        @include media-lg {
+            font-size: 2.5rem;
+        }
+
+        #special {
+            color: #DB5928;
+            font-weight: 600;
+        }
+    }
+
+    .box-special {
+        width: 90%;
+        // min-height: 500px;
+        height: 60%;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-transform: uppercase;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255,255,255,0.5);
+        border-right: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: $transition-ease-slow;
+        transform: translateY(30%);
+
+        @include media-md {
+            max-width: 70%;
+            min-height: 700px;
+            gap: 1rem;
+        }
+
+        @include media-lg {
+            min-height: 0px;
+            height: 500px;
+            gap: 1rem;
+            border-radius: 20px;
+        }
+
+        .special-date {
+            font-weight: 200;
+            font-size: 1.5rem;
+            letter-spacing: .3rem;
+            color: rgb(92, 92, 92);
+
+            @include media-md {
+                font-size: 1.7rem;
+            }
+
+            @include media-lg {
+                font-size: 1.4rem;
+            }
+        }
+
+        .container-special {
+            background: white;
+            min-height: 70%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+            transition: $transition;
+
+            @include media-md {
+                min-height: 75%;
+            }
+
+            @include media-lg {
+                justify-content: center;
+                gap: 1rem;
+                border-radius: 20px;
+            }
+            
+            .special-img-container {
+               max-width: 80%;
+               height: 150px;
+
+               @include media-md {
+                   height: 170px;
+               }
+
+               @include media-lg {
+                   height: 170px;
+               }
+
+               img {
+                   width: 100%;
+                   height: 100%;
+                   border-radius: 10px;
+
+                   @include media-lg {
+                       border-radius: 20px;
+                   }
+               }
+            }
+
+            .special-food {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-transform: none;
+                letter-spacing: .5rem;
+
+                @include media-md {
+                    font-size: 2rem;
+                }
+
+                @include media-lg {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .special-description-wrapper {
+                max-width: 80%;
+
+                .special-description {
+                font-size: .8rem;
+                text-transform: none;
+                text-align: center;
+
+                @include media-md {
+                    font-size: 1.1rem;
+                }
+
+                @include media-md {
+                    font-size: 1.1rem;
+                }
+                }
+            }
+            
+            
+        }
+
+    }
+
+    .box-move{
+            transform: translateY(0%);
+        }
+    
+}
+

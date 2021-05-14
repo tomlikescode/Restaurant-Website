@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+$font-family: 'poppins';
+
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+$transition: all 0.3s linear; 
+$transition-ease: all 0.3s ease-in;
+$transition-ease-slow: all 0.5s ease-in;
+
+// $breakpoints: (
+//     medium: 768px,
+//     large: 1024px,
+//     x-large: 1600px 
+// );
+
+// @mixin mq($key) {
+//     $size: map.get($breakpoints, $key);
+
+//     @media (min-width: $size) {
+//         @content;
+//     }
+    
+// }

@@ -1,0 +1,38 @@
+@import 'config';
+@import 'nav';
+@import 'home';
+@import 'special';
+@import 'menu';
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../images/Home_Image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
