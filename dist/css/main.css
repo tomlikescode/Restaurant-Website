@@ -406,6 +406,21 @@ nav .links-nav a:hover {
   font-size: 2rem;
 }
 
+.menu .btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu .btn-container button {
+  background: none;
+  font-size: 1.25rem;
+  border-style: solid;
+  height: 70px;
+  border-radius: 10px;
+}
+
 .section-center {
   display: grid;
   grid-template-columns: 1fr;
@@ -421,14 +436,19 @@ nav .links-nav a:hover {
 .menu-item {
   display: grid;
   place-items: center;
-  background: linear-gradient(to right, rgba(255, 236, 131, 0.1), rgba(255, 164, 45, 0.1));
+  background: linear-gradient(to right, rgba(255, 236, 131, 0.2), rgba(255, 164, 45, 0.2));
   backdrop-filter: blur(50px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1), 0 -25px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(185, 185, 185, 0.6);
+  border-bottom: 1px solid rgba(185, 185, 185, 0.6);
+  border-left: 1px solid rgba(185, 185, 185, 0.6);
+  border-top: 1px solid rgba(185, 185, 185, 0.6);
+  border-radius: 10px;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .menu-item img {
@@ -439,6 +459,23 @@ nav .links-nav a:hover {
   border: solid;
   border-width: thin;
   border-color: black;
+}
+
+.menu-item .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-item .item-info .menu-header h4 {
+  font-size: 1.5rem;
+}
+
+.menu-item .item-info .item-text {
+  text-align: center;
 }
 
 *,
