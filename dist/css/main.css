@@ -415,7 +415,6 @@ nav .links-nav a:hover {
 }
 
 .menu .btn-container button {
-  background: none;
   font-size: 1rem;
   border-style: solid;
   height: 70px;
@@ -423,10 +422,6 @@ nav .links-nav a:hover {
   text-transform: capitalize;
   min-width: 80px;
   letter-spacing: .25rem;
-}
-
-.menu .btn-container .filter-btn {
-  background-color: #ffcd8d;
 }
 
 .menu .btn-container .filter-btn:hover {
