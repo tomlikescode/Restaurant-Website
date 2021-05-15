@@ -424,8 +424,12 @@ nav .links-nav a:hover {
   letter-spacing: .25rem;
 }
 
-.menu .btn-container .filter-btn:hover {
+.menu .btn-container .filter-btn {
   background-color: #ffcd8d;
+}
+
+.menu .btn-container .filter-btn:hover {
+  background-color: #ffec81;
 }
 
 .section-center {
@@ -475,14 +479,31 @@ nav .links-nav a:hover {
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+  position: relative;
+}
+
+.menu-item .item-info .menu-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-item .item-info .menu-header h4 {
   font-size: 1.5rem;
+  letter-spacing: .25rem;
+}
+
+.menu-item .item-info .menu-header .price {
+  position: absolute;
+  right: 5%;
+  top: 5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .15rem;
 }
 
 .menu-item .item-info .item-text {
   text-align: center;
+  letter-spacing: .06rem;
 }
 
 *,
