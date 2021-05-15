@@ -415,10 +415,16 @@ nav .links-nav a:hover {
 
 .menu .btn-container button {
   background: none;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   border-style: solid;
   height: 70px;
   border-radius: 10px;
+  text-transform: capitalize;
+  background-color: rgba(255, 164, 45, 0.2);
+}
+
+.menu .btn-container button:hover {
+  background-color: #ffa42d;
 }
 
 .section-center {
