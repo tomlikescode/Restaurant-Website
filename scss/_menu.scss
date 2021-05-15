@@ -20,21 +20,28 @@
 
     .btn-container{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         gap: 1rem;
 
-        button .filter-btn {
-            background: none;
-            font-size: 1.15rem;
+        button {
+            font-size: 1rem;
             border-style: solid;
             height: 70px;
             border-radius: 10px;
-            // text-transform: capitalize;
-            background-color: rgba(255,164,45,0.2);
+            text-transform: capitalize;
+            min-width: 80px;
+            letter-spacing: .25rem;
+            
+            
+        }
+
+        .filter-btn {
+            background-color: rgb(255, 205, 141, 0.1);
             
             &:hover {
-                background-color: rgba(255,164,45);
+                background-color: rgb(255, 205, 141);
             }
         }
     }

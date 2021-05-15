@@ -127,7 +127,7 @@ const menu = [
     {
         id: 4,
         title: "Pasta",
-        category: "pizza-and-pasta",
+        category: "carbs",
         price: 18.99,
         img: './images/pasta.jpg',
         desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, omnis?`,
@@ -143,7 +143,7 @@ const menu = [
     {
         id: 6,
         title: "Pizza",
-        category: "pizza-and-pasta",
+        category: "carbs",
         price: 19.99,
         img: './images/pizza.jpg',
         desc: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, omnis?`,
