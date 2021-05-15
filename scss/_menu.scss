@@ -11,6 +11,7 @@
     gap: 5rem;
     align-items: center;
     
+    
     h2 {
         text-transform: capitalize;
         margin-top: 5rem;
@@ -36,6 +37,18 @@
 .menu-item {
     display: grid;
     place-items: center;
+    background: linear-gradient(to right, rgba(255,236,131,0.1), rgba(255,164,45,0.1));
+    // background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(50px);
+    box-shadow:  0 25px 45px rgba(0,0,0,0.1), 
+                 0 -25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    // border-color: black;
+    // border: solid;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .menu-item img {
