@@ -447,7 +447,7 @@ nav .links-nav a:hover {
 .menu-item {
   display: grid;
   place-items: center;
-  background: linear-gradient(to right, rgba(255, 236, 131, 0.2), rgba(255, 164, 45, 0.2));
+  background: linear-gradient(to left, rgba(255, 236, 131, 0.4), rgba(255, 164, 45, 0.4));
   backdrop-filter: blur(50px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1), 0 -25px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -479,12 +479,13 @@ nav .links-nav a:hover {
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
-  position: relative;
 }
 
 .menu-item .item-info .menu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
 .menu-item .item-info .menu-header h4 {
@@ -493,17 +494,25 @@ nav .links-nav a:hover {
 }
 
 .menu-item .item-info .menu-header .price {
-  position: absolute;
-  right: 5%;
-  top: 5px;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: .15rem;
 }
 
 .menu-item .item-info .item-text {
-  text-align: center;
+  text-align: left;
   letter-spacing: .06rem;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.location {
+  min-height: 100vh;
+}
+
+.location #map {
+  height: 400px;
+  width: 100%;
 }
 
 *,

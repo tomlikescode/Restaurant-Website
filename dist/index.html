@@ -135,8 +135,26 @@
         </div>
     </section>
 
+    <section class="location">
+
+        <div id="map">
+
+        </div>
+
+    </section>
+
 
     <script src="https://kit.fontawesome.com/57aec5cdd6.js" crossorigin="anonymous"></script>
+    <script>
+        function initMap() {
+            var options = {
+                    zoom:8,
+                    center:{lat: 41.8781,lng:-87.6298}
+                }
+            var map = new google.maps.Map(document.getElementById('map'),options);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu2Af4HHCwbVi_4fbcBMaGhVQeHEw6RM8&callback=initMap" defer></script>
     <script src="app.js"></script>
     
 </body>
