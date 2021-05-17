@@ -60,6 +60,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 4rem;
+    margin-bottom: 10rem;
 
     @include media-md {
         grid-template-columns: repeat(2, 1fr);
@@ -90,6 +91,11 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
+    @include media-lg {
+        grid-template-columns: repeat(2, 1fr);
+        // position: relative;
+    }
+
     img {
         object-fit: cover;
         height: 200px;
@@ -113,16 +119,43 @@
         margin-top: 1rem;
         // position: relative;
 
+        @include media-lg {
+            // position: absolute;
+            // top: 0;
+            // justify-content: flex-start;
+            // margin-top: 0;
+            place-self: start;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
         .menu-header {
             display: flex;
             justify-content: center;
             align-items: center;
+            place-self: start;
             gap: 6rem;
+            
+
+            @include media-lg {
+            //    justify-content: flex-start;
+            gap: 6rem;
+            }
+
             h4 {
                 font-size: 1.5rem;
                 letter-spacing: .25rem;
             
             }
+
+            .menu-header-title {
+                // position: absolute;
+                // left: 0;
+                @include media-lg {
+                    // place-self: start;
+                }
+            }
+
             .price {
                 // position: absolute;
                 // right: 5%;
@@ -138,6 +171,12 @@
             letter-spacing: .06rem;
             margin-left: 10%;
             margin-right: auto;
+
+            @include media-lg {
+                margin: 0;
+                // margin-right: 10px;
+                font-size: 1.1rem;
+            }
         }
 
     }

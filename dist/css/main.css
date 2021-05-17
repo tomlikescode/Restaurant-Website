@@ -436,6 +436,7 @@ nav .links-nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 4rem;
+  margin-bottom: 10rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -462,6 +463,12 @@ nav .links-nav a:hover {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .menu-item img {
   object-fit: cover;
   height: 200px;
@@ -481,11 +488,26 @@ nav .links-nav a:hover {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-item .item-info {
+    place-self: start;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
 .menu-item .item-info .menu-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  place-self: start;
   gap: 6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-item .item-info .menu-header {
+    gap: 6rem;
+  }
 }
 
 .menu-item .item-info .menu-header h4 {
@@ -506,8 +528,17 @@ nav .links-nav a:hover {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-item .item-info .item-text {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
 .location {
   min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .location #map {

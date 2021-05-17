@@ -1,6 +1,7 @@
 .location {
     min-height: 100vh;
-
+    display: grid;
+    place-items: center;
     #map {
             height: 400px;
             width: 100%;

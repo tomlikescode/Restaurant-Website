@@ -94,7 +94,7 @@
                 <img src="../dist/images/pizza.jpg" alt="menu item" class="photo">
                 <div class="item-info">
                     <div class="menu-header">
-                        <h4>pizza</h4>
+                        <h4 class="menu-header-title">pizza</h4>
                         <h4 class="price">$20</h4>
                     </div>
                     <p class="item-text">
@@ -147,11 +147,23 @@
     <script src="https://kit.fontawesome.com/57aec5cdd6.js" crossorigin="anonymous"></script>
     <script>
         function initMap() {
+            // Map options
             var options = {
-                    zoom:8,
+                    zoom:12,
                     center:{lat: 41.8781,lng:-87.6298}
                 }
-            var map = new google.maps.Map(document.getElementById('map'),options);
+
+            // New map
+            var map = new 
+            google.maps.Map(document.getElementById('map'),options);
+               
+            // Add marker
+            var marker = new google.maps.Marker({
+                position: {lat: 41.8919,lng:-87.6051},
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            }); 
+
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu2Af4HHCwbVi_4fbcBMaGhVQeHEw6RM8&callback=initMap" defer></script>
