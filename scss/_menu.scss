@@ -39,7 +39,13 @@
 
         .filter-btn {
             background-color: rgb(255, 205, 141);
-            width: 100%;
+            opacity: .8;
+            width: 90%;
+            font-size: 1.5rem;
+
+            @include media-md {
+                width: 30%;
+            }
     
             
             &:hover {
@@ -66,6 +72,7 @@
 
     @include media-md {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
     }
 
     
@@ -116,7 +123,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
         margin-top: 1rem;
         // position: relative;
@@ -135,9 +142,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            place-self: start;
-            gap: 6rem;
+            // place-self: start;
+            // gap: 6rem;
+            margin-left: 10%;
             
+            @include media-md {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-content: space-between;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             @include media-lg {
             //    justify-content: flex-start;
@@ -159,12 +175,25 @@
             }
 
             .price {
-                // position: absolute;
-                // right: 5%;
+                display: flex;
+                position: absolute;
+                right: 5%;
                 // top: 5px;
                 font-size: 1.25rem;
                 font-weight: 400;
                 letter-spacing: .15rem;
+                margin-right: 10%;
+
+                @include media-md {
+                    position: inherit;
+                    // top: 0px;
+                    // right: 0px;
+                    // margin-right: 0%;
+                    // padding-left: 6rem;
+                    // // margin-left: 50%;
+                    // margin-left: auto;
+                    margin-right: 0%;
+                }
             }
         }
 

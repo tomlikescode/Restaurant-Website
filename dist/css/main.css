@@ -426,7 +426,15 @@ nav .links-nav a:hover {
 
 .menu .btn-container .filter-btn {
   background-color: #ffcd8d;
-  width: 100%;
+  opacity: .8;
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu .btn-container .filter-btn {
+    width: 30%;
+  }
 }
 
 .menu .btn-container .filter-btn:hover {
@@ -443,6 +451,7 @@ nav .links-nav a:hover {
 @media screen and (min-width: 768px) {
   .section-center {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
 }
 
@@ -484,7 +493,7 @@ nav .links-nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -501,8 +510,18 @@ nav .links-nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  place-self: start;
-  gap: 6rem;
+  margin-left: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item .item-info .menu-header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -517,9 +536,20 @@ nav .links-nav a:hover {
 }
 
 .menu-item .item-info .menu-header .price {
+  display: flex;
+  position: absolute;
+  right: 5%;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: .15rem;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item .item-info .menu-header .price {
+    position: inherit;
+    margin-right: 0%;
+  }
 }
 
 .menu-item .item-info .item-text {
