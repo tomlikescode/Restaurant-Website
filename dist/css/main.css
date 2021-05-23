@@ -426,6 +426,7 @@ nav .links-nav a:hover {
 
 .menu .btn-container .filter-btn {
   background-color: #ffcd8d;
+  width: 100%;
 }
 
 .menu .btn-container .filter-btn:hover {
@@ -542,8 +543,8 @@ nav .links-nav a:hover {
 }
 
 .location #map {
-  height: 400px;
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 *,

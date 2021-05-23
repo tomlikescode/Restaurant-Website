@@ -138,6 +138,9 @@
     <section class="location">
 
         <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.044178136685!2d-87.60694838427915!3d41.89190697922103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d3d2d8d5e53%3A0x9af75ca4b30cf457!2sNavy%20Pier!5e0!3m2!1sen!2sus!4v1621792555704!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
         </div>
 
@@ -146,90 +149,90 @@
 
     <script src="https://kit.fontawesome.com/57aec5cdd6.js" crossorigin="anonymous"></script>
     <script>
-        function initMap() {
-            // Map options
-            var options = {
-                    zoom:10,
-                    center:{lat: 41.8781,lng:-87.6298}
-                }
+    //     function initMap() {
+    //         // Map options
+    //         var options = {
+    //                 zoom:10,
+    //                 center:{lat: 41.8781,lng:-87.6298}
+    //             }
 
-            // New map
-            var map = new 
-            google.maps.Map(document.getElementById('map'),options);
+    //         // New map
+    //         var map = new 
+    //         google.maps.Map(document.getElementById('map'),options);
             
 
-            // listen for click on map
-            google.maps.event.addListener(map, 'click', 
-            function(event) {
-                addMarker({coords:event.latLng});
-            });
-            /*
-            // Add marker
-            var marker = new google.maps.Marker({
-                position: {lat: 41.8919,lng:-87.6051},
-                map:map,
-                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-            }); 
+    //         // listen for click on map
+    //         google.maps.event.addListener(map, 'click', 
+    //         function(event) {
+    //             addMarker({coords:event.latLng});
+    //         });
+    //         /*
+    //         // Add marker
+    //         var marker = new google.maps.Marker({
+    //             position: {lat: 41.8919,lng:-87.6051},
+    //             map:map,
+    //             icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+    //         }); 
 
-            var infoWindow = new google.maps.InfoWindow({
-                content: '<h1>Navy Pier</h1>'
-            })
+    //         var infoWindow = new google.maps.InfoWindow({
+    //             content: '<h1>Navy Pier</h1>'
+    //         })
 
-            marker.addListener('click', function(){
-                infoWindow.open(map, marker);
-            })
-            */
+    //         marker.addListener('click', function(){
+    //             infoWindow.open(map, marker);
+    //         })
+    //         */
 
-            // Array of markers
-            var markers = [
-                {
-                    coords: { lat: 41.8919, lng: -87.6051 },
-                    iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                    content: '<h1>Navy Pier</h1>'
-                },
-                {
-                    coords: { lat: 41.9484, lng: -87.6553 },
-                    content: '<h1>Wrigley Field</h1>'
-                },
-                { coords: { lat: 41.8299, lng: -87.6338 } 
-                }
+    //         // Array of markers
+    //         var markers = [
+    //             {
+    //                 coords: { lat: 41.8919, lng: -87.6051 },
+    //                 iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    //                 content: '<h1>Navy Pier</h1>'
+    //             },
+    //             {
+    //                 coords: { lat: 41.9484, lng: -87.6553 },
+    //                 content: '<h1>Wrigley Field</h1>'
+    //             },
+    //             { coords: { lat: 41.8299, lng: -87.6338 } 
+    //             }
 
-            ];
+    //         ];
 
-            // Loop through markers
-            for(var i = 0; i < markers.length; i++) {
-                // add marker
-                addMarker(markers[i]);
-            }
+    //         // Loop through markers
+    //         for(var i = 0; i < markers.length; i++) {
+    //             // add marker
+    //             addMarker(markers[i]);
+    //         }
 
-            // Add Marker Function
-            function addMarker (props) {
-                var marker = new google.maps.Marker({
-                    position: props.coords,
-                    map: map,
-                    // icon: props.iconImage
-                });
+    //         // Add Marker Function
+    //         function addMarker (props) {
+    //             var marker = new google.maps.Marker({
+    //                 position: props.coords,
+    //                 map: map,
+    //                 // icon: props.iconImage
+    //             });
 
-                // Check for custom icon
-                if(props.iconImage){
-                    // Set icon image
-                    marker.setIcon(props.iconImage);
-                }
+    //             // Check for custom icon
+    //             if(props.iconImage){
+    //                 // Set icon image
+    //                 marker.setIcon(props.iconImage);
+    //             }
 
-                // Check content
-                if(props.content) {
-                    var infoWindow = new google.maps.InfoWindow({
-                        content: props.content
-                    })
+    //             // Check content
+    //             if(props.content) {
+    //                 var infoWindow = new google.maps.InfoWindow({
+    //                     content: props.content
+    //                 })
 
-                    marker.addListener('click', function () {
-                        infoWindow.open(map, marker);
-                    })
-                }
-            }
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu2Af4HHCwbVi_4fbcBMaGhVQeHEw6RM8&callback=initMap" defer></script>
+    //                 marker.addListener('click', function () {
+    //                     infoWindow.open(map, marker);
+    //                 })
+    //             }
+    //         }
+    //     }
+    // </script>
+    <!-- // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfsz6jMDBhrcSG1I7uXrQDpngAtydSW4w&callback=initMap" defer></script> -->
     <script src="app.js"></script>
     
 </body>
