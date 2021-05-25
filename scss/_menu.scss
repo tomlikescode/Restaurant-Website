@@ -25,6 +25,11 @@
         align-items: center;
         gap: 1rem;
 
+        @include media-md {
+            min-width: 70%;
+            
+        }
+
         button {
             font-size: 1rem;
             border-style: solid;
@@ -32,9 +37,12 @@
             border-radius: 10px;
             text-transform: capitalize;
             min-width: 80px;
-            letter-spacing: .25rem;
-            
-            
+            letter-spacing: .25rem;  
+
+            @include media-lg {
+                // max-width: 100px;
+                max-width: 150px;
+            }
         }
 
         .filter-btn {
@@ -204,8 +212,8 @@
             margin-right: auto;
 
             @include media-lg {
-                margin: 0;
-                // margin-right: 10px;
+                // margin: 0;
+                margin-right: 10%;
                 font-size: 1.1rem;
             }
         }
