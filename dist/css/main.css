@@ -596,6 +596,11 @@ nav .links-nav a:hover {
   font-size: 2.5rem;
 }
 
+.location h3, .location h4 {
+  font-weight: 400;
+  color: white;
+}
+
 .location .find-us {
   margin-top: 5rem;
 }
@@ -612,6 +617,19 @@ nav .links-nav a:hover {
   align-items: center;
   gap: 2rem;
   color: white;
+}
+
+.location .bottom-info h4 {
+  font-weight: 400;
+  color: white;
+}
+
+.location .bottom-info .bottom-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1.5rem;
 }
 
 *,
@@ -638,7 +656,7 @@ header {
 
 a {
   text-decoration: none;
-  color: green;
+  color: white;
 }
 
 ul {

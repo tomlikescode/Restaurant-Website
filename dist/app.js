@@ -255,4 +255,12 @@ function displayMenuButtons() {
     });
 }
 
+const copyDate = document.getElementById('copy-date');
+// copyright date
+const year = new Date();
+const currentYear = year.getFullYear();
+
+copyDate.innerHTML = currentYear;
+
+
 

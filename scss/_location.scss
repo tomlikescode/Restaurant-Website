@@ -18,6 +18,11 @@
         
     }
 
+    h3, h4 {
+        font-weight: 400;
+        color: white;
+    }
+
     .find-us {
             margin-top: 5rem;
         }
@@ -36,6 +41,19 @@
         align-items: center;
         gap: 2rem;
         color: white;
+
+        h4 {
+            font-weight: 400;
+            color: white;
+        }
+
+        .bottom-icons {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 1.5rem;
+            font-size: 1.5rem;
+        }
 
     }
 }
