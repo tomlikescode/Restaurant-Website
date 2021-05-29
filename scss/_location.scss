@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     
     // margin-top: 5rem;
     background-color: rgb(70, 70, 70);
@@ -18,7 +18,7 @@
         
     }
 
-    h3, h4 {
+    h3, h4, h5 {
         font-weight: 400;
         color: white;
     }
@@ -56,4 +56,19 @@
         }
 
     }
+
+    .bottom-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+        }
+
+    .mallen {
+        margin-bottom: 2rem;
+    }
+
 }

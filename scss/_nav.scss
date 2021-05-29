@@ -4,6 +4,30 @@ nav {
     transition: translateX(0);
     z-index: 1;
 
+    // .menu-btn {
+    //     position: absolute;
+    //     z-index: 1;
+    //     right: 1rem;
+    //     top: 1rem;
+    //     height: 20px;
+    //     width: 28px;
+    //     cursor: pointer;
+    //     background-color: black;
+
+
+    //     &__burger {
+    //         position: absolute;
+    //         right: 0;
+    //         top: 0;
+    //         width: 28px;
+    //         height: 3px;
+    //         background: black;
+    //     }
+
+    // }
+
+    
+
     .nav-center {
         margin-top: 0.5rem;
         display: flex;
@@ -109,6 +133,14 @@ nav {
     background: transparent;
     border-color: transparent;
     cursor: pointer;
+    width: 28px;
+    height: 10px;
+    // background: black;
+
+    // .burger-line {
+    //     width: 100%;
+    //     background: black;
+    // }
 
     &:hover {
         color: gray;
@@ -117,6 +149,9 @@ nav {
     @include media-lg {
         display: none;
     }
+
+
+
 }
 
 .sidebar {

@@ -12,6 +12,14 @@ closeBtn.addEventListener('click', function() {
     sidebar.classList.remove('show-sidebar');
 });
 
+// ***** sidebar links ******
+const scrollLinks = document.querySelectorAll('.scroll-link');
+
+scrollLinks.forEach((link) => {
+    link.addEventListener('click', () =>{
+        sidebar.classList.remove('show-sidebar');
+    })
+})
 
 // ***** fixed navbar *****
 const navbar = document.getElementById('nav');
@@ -263,4 +271,4 @@ const currentYear = year.getFullYear();
 copyDate.innerHTML = currentYear;
 
 
-
+
