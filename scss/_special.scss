@@ -94,9 +94,13 @@
             }
 
             @include media-lg {
-                justify-content: center;
-                gap: 1rem;
+                // justify-content: center;
+                // gap: 1rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
                 border-radius: 20px;
+                
             }
             
             .special-img-container {
@@ -109,7 +113,10 @@
                }
 
                @include media-lg {
-                   height: 170px;
+                   height: 80%;
+                   width: auto;
+                   grid-column: 2 / 3;
+                   grid-row: 1 / 4;
                }
 
                img {
@@ -138,6 +145,23 @@
                 }
 
                 @include media-lg {
+                    font-size: 2rem;
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    display: grid;
+                    align-self: end;
+                    justify-content: center;
+                    padding-top: 2rem;
+                }
+            }
+
+            .special-food-price {
+
+                @include media-lg{
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    display: grid;
+                    place-items: center;
                     font-size: 1.5rem;
                 }
             }
@@ -145,18 +169,31 @@
             .special-description-wrapper {
                 max-width: 80%;
 
+                @include media-lg {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 4;
+                    display: grid;                    
+                    max-width: 100%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+
                 .special-description {
-                font-size: .8rem;
-                text-transform: none;
-                text-align: center;
+                    font-size: .8rem;
+                    text-transform: none;
+                    text-align: center;
 
-                @include media-md {
-                    font-size: 1.1rem;
-                }
+                    @include media-md {
+                        font-size: 1.1rem;
+                    }
 
-                @include media-md {
-                    font-size: 1.1rem;
-                }
+                    @include media-lg {
+                        display: grid;
+                        justify-content: center;
+                        align-self: start;
+                        padding-bottom: 3rem;
+                        margin-bottom: 1.2rem;
+                    }
                 }
             }
             
