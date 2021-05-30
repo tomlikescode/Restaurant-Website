@@ -100,7 +100,6 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
                 border-radius: 20px;
-                
             }
             
             .special-img-container {
@@ -156,6 +155,10 @@
             }
 
             .special-food-price {
+
+                @include media-md {
+                    font-size: 1.5rem;
+                }
 
                 @include media-lg{
                     grid-column: 1 / 2;

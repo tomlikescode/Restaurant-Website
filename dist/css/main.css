@@ -382,6 +382,12 @@ nav .links-nav a:hover {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .special .box-special .container-special .special-food-price {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .special .box-special .container-special .special-food-price {
     grid-column: 1 / 2;
@@ -450,7 +456,7 @@ nav .links-nav a:hover {
 .menu h2 {
   text-transform: capitalize;
   margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .menu .btn-container {
@@ -585,7 +591,7 @@ nav .links-nav a:hover {
 
 @media screen and (min-width: 1024px) {
   .menu-item .item-info .menu-header {
-    gap: 6rem;
+    gap: 4rem;
   }
 }
 
