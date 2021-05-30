@@ -92,6 +92,7 @@ nav {
         background: transparent;
         color: gray;
         font-size: 1rem;
+        text-align: center;
         text-transform: capitalize;
         letter-spacing: 1rem;
         display: block;
@@ -101,6 +102,10 @@ nav {
         margin: 0 1rem;
         border-radius: 10px;
         transition: $transition-ease;
+
+        @include media-lg {
+            letter-spacing: .75rem;
+        }
 
         &:hover {
             background: rgb(75, 75, 75);

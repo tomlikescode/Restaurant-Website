@@ -108,6 +108,10 @@
         // position: relative;
     }
 
+    @include media-lg {
+        padding-left: 5%;
+    }
+
     img {
         object-fit: cover;
         height: 200px;
@@ -160,7 +164,7 @@
 
             @include media-lg {
             //    justify-content: flex-start;
-            gap: 4rem;
+            gap: 2.5rem;
             }
 
             h4 {
